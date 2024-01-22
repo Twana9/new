@@ -1,0 +1,5 @@
+secret.txt 
+
+
+//Remove-Item .git -Recurse -Force
+// for removing git commits
