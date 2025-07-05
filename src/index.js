@@ -12,9 +12,14 @@
 // console.log(typeof d);
 // let online = true;
 // console.log(!online);
-let students = 31;
+// let students = 31;
 
-// let extra = students % 2 == 0;
-// ++students;
-students -= 1;
-console.log(students);
+// // let extra = students % 2 == 0;
+// // ++students;25
+// students -= 1;
+// console.log(students);
+
+let age = window.prompt("tell me about your age?");
+age = Number(age);
+age += 1;
+console.log(age);
