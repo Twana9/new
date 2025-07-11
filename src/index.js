@@ -19,7 +19,11 @@
 // students -= 1;
 // console.log(students);
 
-let age = window.prompt("tell me about your age?");
-age = Number(age);
-age += 1;
-console.log(age);
+// let age = window.prompt("tell me about your age?");
+// age = Number(age);
+// age += 1;
+// console.log(age);
+// let min = 50;
+// let max = 100;
+// let num = Math.floor(Math.random() * (max - min)) + min;
+// console.log(num);
