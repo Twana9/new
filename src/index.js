@@ -27,3 +27,12 @@
 // let max = 100;
 // let num = Math.floor(Math.random() * (max - min)) + min;
 // console.log(num);
+
+let nama = "Twana Koye";
+
+let firstName = nama.slice(0, nama.indexOf(" "));
+let lastName = nama.slice(nama.indexOf(" ") + 1);
+
+console.log(firstName);
+console.log(lastName);
+console.log(nama.slice(-2));
