@@ -37,7 +37,13 @@
 // console.log(lastName);
 // console.log(nama.slice(-2));
 
-let nama = window.prompt("enter a name");
+// let nama = window.prompt("enter a name");
 
-nama = nama.trim().charAt(0).toUpperCase() + nama.trim().slice(1).toLowerCase();
-console.log(nama);
+// nama = nama.trim().charAt(0).toUpperCase() + nama.trim().slice(1).toLowerCase();
+// console.log(nama);
+
+let isHappy = false;
+let uSure = false;
+
+if (isHappy || !uSure) console.log("understood");
+else console.log("not understood");
