@@ -42,8 +42,20 @@
 // nama = nama.trim().charAt(0).toUpperCase() + nama.trim().slice(1).toLowerCase();
 // console.log(nama);
 
-let isHappy = false;
-let uSure = false;
+// let isHappy = false;
+// let uSure = false;
 
-if (isHappy || !uSure) console.log("understood");
-else console.log("not understood");
+// if (isHappy || !uSure) console.log("understood");
+// else console.log("not understood");
+
+let nama;
+
+// while (nama === "" || nama === null) {
+//   nama = window.prompt("enter a name");
+// }
+// console.log(nama);
+
+do {
+  nama = window.prompt("Enter a name:");
+} while (nama === "" || nama === null);
+console.log(nama);
