@@ -48,14 +48,45 @@
 // if (isHappy || !uSure) console.log("understood");
 // else console.log("not understood");
 
-let nama;
+// let nama;
 
 // while (nama === "" || nama === null) {
 //   nama = window.prompt("enter a name");
 // }
 // console.log(nama);
 
-do {
-  nama = window.prompt("Enter a name:");
-} while (nama === "" || nama === null);
-console.log(nama);
+// do {
+//   nama = window.prompt("Enter a name:");
+// } while (nama === "" || nama === null);
+// console.log(nama);
+
+let min = 1;
+let max = 100;
+
+let running = true;
+let attempts = 0;
+let guess;
+
+let answer = Math.floor(Math.random() * (max - min + 1)) + min;
+
+while (running) {
+  guess = window.prompt(`enter a number between ${min} and ${max}`);
+  guess = Number(guess);
+
+  if (isNaN(guess)) window.alert("Enter a number!");
+  else if (guess < min || guess > max) window.alert("invalid number");
+  else {
+    if (guess > answer) {
+      window.alert(`the number is less than ${guess}`);
+      attempts++;
+    } else if (guess < answer) {
+      window.alert(`the number is greater than ${guess}`);
+      attempts++;
+    } else {
+      window.alert(
+        `Congrats, correct answer ${guess} us tried ${attempts} times`
+      );
+      running = false;
+    }
+  }
+}
