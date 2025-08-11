@@ -60,6 +60,8 @@
 // } while (nama === "" || nama === null);
 // console.log(nama);
 
+/////////////////////////////////////////////////////////////////////////////////////////
+
 // let min = 1;
 // let max = 100;
 
@@ -91,10 +93,27 @@
 //   }
 // }
 
-let c = window.prompt(`enter a Temperature in Celicis`);
-c = Number(c);
+//////////////////////////////////////////////////////////////////////////////////////////////
 
-function cToK(x) {
-  return x + 273;
+// let c = window.prompt(`enter a Temperature in Celicis`);
+// c = Number(c);
+
+// function cToK(x) {
+//   return x + 273;
+// }
+// window.alert(cToK(c));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let fruits = ["apple", "orange", "banana", "cocanat"];
+
+// fruits.unshift("twana");
+// fruits.sort().reverse();
+// console.log(fruits.indexOf("apple"));
+
+// for (let i = fruits.length - 1; i >= 0; i--) {
+//   console.log(fruits[i]);
+// }
+for (let fruit of fruits) {
+  console.log(fruit);
 }
-window.alert(cToK(c));
