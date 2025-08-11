@@ -60,33 +60,41 @@
 // } while (nama === "" || nama === null);
 // console.log(nama);
 
-let min = 1;
-let max = 100;
+// let min = 1;
+// let max = 100;
 
-let running = true;
-let attempts = 0;
-let guess;
+// let running = true;
+// let attempts = 0;
+// let guess;
 
-let answer = Math.floor(Math.random() * (max - min + 1)) + min;
+// let answer = Math.floor(Math.random() * (max - min + 1)) + min;
 
-while (running) {
-  guess = window.prompt(`enter a number between ${min} and ${max}`);
-  guess = Number(guess);
+// while (running) {
+//   guess = window.prompt(`enter a number between ${min} and ${max}`);
+//   guess = Number(guess);
 
-  if (isNaN(guess)) window.alert("Enter a number!");
-  else if (guess < min || guess > max) window.alert("invalid number");
-  else {
-    if (guess > answer) {
-      window.alert(`the number is less than ${guess}`);
-      attempts++;
-    } else if (guess < answer) {
-      window.alert(`the number is greater than ${guess}`);
-      attempts++;
-    } else {
-      window.alert(
-        `Congrats, correct answer ${guess} us tried ${attempts} times`
-      );
-      running = false;
-    }
-  }
+//   if (isNaN(guess)) window.alert("Enter a number!");
+//   else if (guess < min || guess > max) window.alert("invalid number");
+//   else {
+//     if (guess > answer) {
+//       window.alert(`the number is less than ${guess}`);
+//       attempts++;
+//     } else if (guess < answer) {
+//       window.alert(`the number is greater than ${guess}`);
+//       attempts++;
+//     } else {
+//       window.alert(
+//         `Congrats, correct answer ${guess} us tried ${attempts} times`
+//       );
+//       running = false;
+//     }
+//   }
+// }
+
+let c = window.prompt(`enter a Temperature in Celicis`);
+c = Number(c);
+
+function cToK(x) {
+  return x + 273;
 }
+window.alert(cToK(c));
