@@ -105,7 +105,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let fruits = ["apple", "orange", "banana", "cocanat"];
+// let fruits = ["apple", "orange", "banana", "cocanat"];
 
 // fruits.unshift("twana");
 // fruits.sort().reverse();
@@ -114,6 +114,24 @@ let fruits = ["apple", "orange", "banana", "cocanat"];
 // for (let i = fruits.length - 1; i >= 0; i--) {
 //   console.log(fruits[i]);
 // }
-for (let fruit of fruits) {
-  console.log(fruit);
-}
+// for (let fruit of fruits) {
+//   console.log(fruit);
+// }
+
+////////////////////////////////////////////////
+let numbers = [1, 2, 3, 4, 5];
+
+let maximum = Math.max(...numbers);
+let minimum = Math.min(...numbers);
+
+console.log(maximum);
+console.log(minimum);
+
+let username = "BroCode";
+console.log([...username].join("-"));
+
+let fruit = ["apple", "orange", "banana"];
+let vegetables = ["carot", "cucumber", "minst"];
+
+let foods = [...fruit, ...vegetables, "milk"];
+console.log(foods);
