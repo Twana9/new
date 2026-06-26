@@ -119,19 +119,23 @@
 // }
 
 ////////////////////////////////////////////////
-let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 
-let maximum = Math.max(...numbers);
-let minimum = Math.min(...numbers);
+// let maximum = Math.max(...numbers);
+// let minimum = Math.min(...numbers);
 
-console.log(maximum);
-console.log(minimum);
+// console.log(maximum);
+// console.log(minimum);
 
-let username = "BroCode";
-console.log([...username].join("-"));
+// let username = "BroCode";
+// console.log([...username].join("-"));
 
-let fruit = ["apple", "orange", "banana"];
-let vegetables = ["carot", "cucumber", "minst"];
+// let fruit = ["apple", "orange", "banana"];
+// let vegetables = ["carot", "cucumber", "minst"];
 
-let foods = [...fruit, ...vegetables, "milk"];
-console.log(foods);
+// let foods = [...fruit, ...vegetables, "milk"];
+// console.log(foods);
+////////////////////////////////////////////////
+
+    console.log('hellow world');
+    
