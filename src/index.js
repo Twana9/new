@@ -137,5 +137,28 @@
 // console.log(foods);
 ////////////////////////////////////////////////
 
-    console.log('hellow world');
+    // console.log('hellow world');
+
+    // let name ='twana';
     
+    // console.log(name);
+    // let firstName;
+
+    // const interestRate = 0.3;
+    // interestRate = 1;
+    // console.log(interestRate);
+    //  let name = "twana";
+    //  let age = 26;
+    //  let isAproved = false;
+    //  let firstName = undefined;
+    //  let selectColor = null;
+let person = {
+    name : 'twana',
+    age: 26
+};
+person.name = 'koys';
+//to select an object propery
+let selection = 'name';
+person[selection] = 'aaa';
+console.log(person);
+
