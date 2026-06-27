@@ -152,13 +152,33 @@
     //  let isAproved = false;
     //  let firstName = undefined;
     //  let selectColor = null;
-let person = {
-    name : 'twana',
-    age: 26
-};
-person.name = 'koys';
-//to select an object propery
-let selection = 'name';
-person[selection] = 'aaa';
-console.log(person);
+// let person = {
+//     name : 'twana',
+//     age: 26
+// };
+// person.name = 'koys';
+// //to select an object propery
+// let selection = 'name';
+// person[selection] = 'aaa';
+// console.log(person);
+
+// let selectedColors = ['red','blue'];
+// selectedColors[2] = 1;
+// console.log(selectedColors.length);
+// console.log();
+
+// function greet(name, lastName){
+//     console.log('hello '+name +' '+ lastName);
+// }
+// greet('twana', 'koya');
+// greet('koya', 'twana');
+
+function square(number){
+    console.log('hi')
+
+    return number * number
+
+}
+
+console.log(square(2))
 
