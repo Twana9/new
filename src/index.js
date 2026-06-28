@@ -137,21 +137,21 @@
 // console.log(foods);
 ////////////////////////////////////////////////
 
-    // console.log('hellow world');
+// console.log('hellow world');
 
-    // let name ='twana';
-    
-    // console.log(name);
-    // let firstName;
+// let name ='twana';
 
-    // const interestRate = 0.3;
-    // interestRate = 1;
-    // console.log(interestRate);
-    //  let name = "twana";
-    //  let age = 26;
-    //  let isAproved = false;
-    //  let firstName = undefined;
-    //  let selectColor = null;
+// console.log(name);
+// let firstName;
+
+// const interestRate = 0.3;
+// interestRate = 1;
+// console.log(interestRate);
+//  let name = "twana";
+//  let age = 26;
+//  let isAproved = false;
+//  let firstName = undefined;
+//  let selectColor = null;
 // let person = {
 //     name : 'twana',
 //     age: 26
@@ -173,12 +173,47 @@
 // greet('twana', 'koya');
 // greet('koya', 'twana');
 
-function square(number){
-    console.log('hi')
+// function square(number){
+//     console.log('hi')
 
-    return number * number
+//     return number * number
 
-}
+// }
 
-console.log(square(2))
+// console.log(square(2))
 
+// let x = 10;
+// let y = 3;
+
+// // console.log(x + y);
+// // console.log(x - y);
+// // console.log(x * y);
+// // console.log(x / y);
+// // console.log(x % y);
+// // console.log(x ** y);
+
+// // console.log(x++);
+// // console.log(x);
+
+// console.log(--x);
+
+// let x = 1;
+// x /= 5;
+// console.log(x);
+
+// relational
+// console.log(x > 0);
+// console.log(x >= 1);
+// console.log(x < 1);
+// console.log(x <= 1);
+
+// // equality
+// console.log(x === 1);
+// console.log(x !== 1);
+
+// console.log(1 === 1);
+// console.log("1" === 1);
+// console.log(1 == 1);
+// console.log(true == 1);
+let points = 10;
+console.log(points > 100 ? "gold" : "silver");
