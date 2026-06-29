@@ -215,5 +215,13 @@
 // console.log("1" === 1);
 // console.log(1 == 1);
 // console.log(true == 1);
-let points = 10;
-console.log(points > 100 ? "gold" : "silver");
+// let points = 10;
+// console.log(points > 100 ? "gold" : "silver");
+
+let hasHighIncome = true;
+let goodCreditScore = false;
+let eligibleForLoan = hasHighIncome || goodCreditScore;
+console.log("Eligble for loan ", eligibleForLoan);
+
+let applicationRefused = !eligibleForLoan;
+console.log("application refused", applicationRefused);
