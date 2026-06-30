@@ -218,10 +218,25 @@
 // let points = 10;
 // console.log(points > 100 ? "gold" : "silver");
 
-let hasHighIncome = true;
-let goodCreditScore = false;
-let eligibleForLoan = hasHighIncome || goodCreditScore;
-console.log("Eligble for loan ", eligibleForLoan);
+// let hasHighIncome = true;
+// let goodCreditScore = false;
+// let eligibleForLoan = hasHighIncome || goodCreditScore;
+// console.log("Eligble for loan ", eligibleForLoan);
 
-let applicationRefused = !eligibleForLoan;
-console.log("application refused", applicationRefused);
+// let applicationRefused = !eligibleForLoan;
+// console.log("application refused", applicationRefused);
+// let userColor = undefined;
+// let defaultColor = "blue";
+
+// let currentColor = userColor || defaultColor;
+// console.log(currentColor);
+
+let a = "red";
+let b = "blue";
+
+let temp = a;
+a = b;
+b = temp;
+
+console.log(a);
+console.log(b);
