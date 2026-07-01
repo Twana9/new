@@ -246,17 +246,21 @@
 // else if (houre === 12 || houre < 6) console.log("good afternoon!");
 // else console.log("good evening!");
 
-let role = "guest";
+// let role = "guest";
 
-switch (role) {
-  case "guest":
-    console.log("guest user");
-    break;
+// switch (role) {
+//   case "guest":
+//     console.log("guest user");
+//     break;
 
-  case "moderator":
-    console.log("Moderator user");
-    break;
+//   case "moderator":
+//     console.log("Moderator user");
+//     break;
 
-  default:
-    console.log("unknown user");
+//   default:
+//     console.log("unknown user");
+// }
+
+for (let i = 5; i >= 1; i--) {
+  if (i % 2 !== 0) console.log("hello", i);
 }
