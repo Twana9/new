@@ -231,12 +231,32 @@
 // let currentColor = userColor || defaultColor;
 // console.log(currentColor);
 
-let a = "red";
-let b = "blue";
+// let a = "red";
+// let b = "blue";
 
-let temp = a;
-a = b;
-b = temp;
+// let temp = a;
+// a = b;
+// b = temp;
 
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
+// let houre
+//  = 12;
+// if (houre >= 6 && houre < 12) console.log("good morning!");
+// else if (houre === 12 || houre < 6) console.log("good afternoon!");
+// else console.log("good evening!");
+
+let role = "guest";
+
+switch (role) {
+  case "guest":
+    console.log("guest user");
+    break;
+
+  case "moderator":
+    console.log("Moderator user");
+    break;
+
+  default:
+    console.log("unknown user");
+}
