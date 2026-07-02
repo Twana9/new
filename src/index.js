@@ -329,17 +329,28 @@
 // }
 // console.log(max(8, 7));
 
-function isLandscape(width, height) {
-  return width > height;
-}
-console.log(isLandscape(13, 1));
+// function isLandscape(width, height) {
+//   return width > height;
+// }
+// console.log(isLandscape(13, 1));
 
-function fizzBuzz(input) {
-  if (typeof input !== "number") return NaN;
-  if (input % 3 === 0 && input % 5 === 0) return "FizzBuzz";
-  if (input % 5 === 0) return "Buzz";
-  if (input % 3 === 0) return "Fizz";
-  return input;
+// function fizzBuzz(input) {
+//   if (typeof input !== "number") return NaN;
+//   if (input % 3 === 0 && input % 5 === 0) return "FizzBuzz";
+//   if (input % 5 === 0) return "Buzz";
+//   if (input % 3 === 0) return "Fizz";
+//   return input;
+// }
+// const output = fizzBuzz("efe");
+// console.log(output);
+
+function showNumbers(limit) {
+  for (let i = 0; i <= limit; i++) {
+    // if (i % 2 === 0) console.log(i, "even");
+    // else console.log(i, "odd");
+    // console.log(i % 2 === 0 ? i + " EVEN" : i + " ODD");
+    let type = i % 2 === 0 ? "EVEN" : "ODD";
+    console.log(i, type);
+  }
 }
-const output = fizzBuzz("efe");
-console.log(output);
+showNumbers(10);
