@@ -293,15 +293,33 @@
 //   console.log(color);
 // }
 
-let i = 0;
-while (i <= 10) {
-  // if (i === 5) break;
-  if (i % 2 === 0) {
-    i++;
-    console.log("even");
+// let i = 0;
+// while (i <= 10) {
+//   // if (i === 5) break;
+//   if (i % 2 === 0) {
+//     i++;
+//     console.log("even");
 
-    continue;
+//     continue;
+//   }
+//   console.log(i);
+//   i++;
+// }
+
+// let numOne = 1;
+// let numTwo = 3;
+function maximum(numOne, numTwo) {
+  let max;
+  let min;
+  if (numOne > numTwo) {
+    max = numOne;
+    min = numTwo;
+    console.log(max);
+  } else if (numOne === numTwo) console.log("equal numbers");
+  else {
+    max = numTwo;
+    min = numOne;
+    console.log(max);
   }
-  console.log(i);
-  i++;
 }
+maximum(7, 99);
