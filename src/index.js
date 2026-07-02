@@ -261,6 +261,30 @@
 //     console.log("unknown user");
 // }
 
-for (let i = 5; i >= 1; i--) {
-  if (i % 2 !== 0) console.log("hello", i);
+// for (let i = 5; i >= 1; i--) {
+//   if (i % 2 !== 0) console.log("hello", i);
+// }
+// let i = 0;
+// while (i <= 5) {
+//   if (i % 2 !== 0) console.log(i);
+//   i++;
+// }
+// let i = 0;
+// do {
+//   if (i % 2 !== 0) console.log(i);
+//   i++;
+// } while (i <= 5);
+
+let person = {
+  name: "twana",
+  age: 26,
+};
+
+for (let key in person) {
+  console.log(key, person[key]);
+}
+
+const colors = ["red", "green", "blue"];
+for (let index in colors) {
+  console.log(index, colors[index]);
 }
