@@ -308,23 +308,38 @@
 
 // let numOne = 1;
 // let numTwo = 3;
-function maximum(numOne, numTwo) {
-  let max;
-  let min;
-  if (numOne > numTwo) {
-    max = numOne;
-    min = numTwo;
-    console.log(max);
-  } else if (numOne === numTwo) console.log("equal numbers");
-  else {
-    max = numTwo;
-    min = numOne;
-    console.log(max);
-  }
-}
-maximum(7, 99);
+// function maximum(numOne, numTwo) {
+//   let max;
+//   let min;
+//   if (numOne > numTwo) {
+//     max = numOne;
+//     min = numTwo;
+//     console.log(max);
+//   } else if (numOne === numTwo) console.log("equal numbers");
+//   else {
+//     max = numTwo;
+//     min = numOne;
+//     console.log(max);
+//   }
+// }
+// maximum(7, 99);
 
-function max(a, b) {
-  return a > b ? a : b;
+// function max(a, b) {
+//   return a > b ? a : b;
+// }
+// console.log(max(8, 7));
+
+function isLandscape(width, height) {
+  return width > height;
 }
-console.log(max(8, 7));
+console.log(isLandscape(13, 1));
+
+function fizzBuzz(input) {
+  if (typeof input !== "number") return NaN;
+  if (input % 3 === 0 && input % 5 === 0) return "FizzBuzz";
+  if (input % 5 === 0) return "Buzz";
+  if (input % 3 === 0) return "Fizz";
+  return input;
+}
+const output = fizzBuzz("efe");
+console.log(output);
