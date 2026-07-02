@@ -323,3 +323,8 @@ function maximum(numOne, numTwo) {
   }
 }
 maximum(7, 99);
+
+function max(a, b) {
+  return a > b ? a : b;
+}
+console.log(max(8, 7));
