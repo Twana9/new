@@ -1,14 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>hellow world</h1>
-  <script src="index.js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .btn {
+        background-color: red;
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        font-weight: bold;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition:
+          opacity 0.15s,
+          transform 0.1s;
+      }
+      .btn:hover {
+        opacity: 0.7;
+        transform: translateY(2px);
+      }
+      .btn2 {
+        background-color: white;
+        color: rgb(41, 121, 187);
+        border-color: rgb(41, 121, 187);
+        border-style: solid;
+        border-width: 1px;
+        height: 36px;
+        width: 62px;
+        cursor: pointer;
+        border-radius: 2px;
+        transition:
+          background-color 1s,
+          color 1s;
+      }
+      .btn2:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        background-color: rgb(41, 121, 187);
+        color: white;
+      }
+      .btn2:active {
+        opacity: 0.75;
+      }
+    </style>
+    <button class="btn">SUBSCRIBE</button>
+    <button class="btn2">JOIN</button>
 
-  </script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>

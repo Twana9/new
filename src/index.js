@@ -344,13 +344,13 @@
 // const output = fizzBuzz("efe");
 // console.log(output);
 
-function showNumbers(limit) {
-  for (let i = 0; i <= limit; i++) {
-    // if (i % 2 === 0) console.log(i, "even");
-    // else console.log(i, "odd");
-    // console.log(i % 2 === 0 ? i + " EVEN" : i + " ODD");
-    let type = i % 2 === 0 ? "EVEN" : "ODD";
-    console.log(i, type);
-  }
-}
-showNumbers(10);
+// function showNumbers(limit) {
+//   for (let i = 0; i <= limit; i++) {
+//     // if (i % 2 === 0) console.log(i, "even");
+//     // else console.log(i, "odd");
+//     // console.log(i % 2 === 0 ? i + " EVEN" : i + " ODD");
+//     let type = i % 2 === 0 ? "EVEN" : "ODD";
+//     console.log(i, type);
+//   }
+// }
+// showNumbers(10);
