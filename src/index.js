@@ -355,15 +355,29 @@
 // }
 // showNumbers(10);
 
-function countTruthy(array) {
-  let count = 0;
-  for (let item of array) {
-    if (item) {
-      count++;
-      console.log(item);
-    }
-  }
-  return count;
-}
+// function countTruthy(array) {
+//   let count = 0;
+//   for (let item of array) {
+//     if (item) {
+//       count++;
+//       console.log(item);
+//     }
+//   }
+//   return count;
+// }
 
-console.log(countTruthy([1, 2, 3, false, undefined, "aa"]));
+// console.log(countTruthy([1, 2, 3, false, undefined, "aa"]));
+
+const movie = {
+  title: "a",
+  releaseYear: 2018,
+  rating: 4.5,
+  director: "b",
+};
+
+function showProperties(movie) {
+  for (prop in movie) {
+    if (typeof movie[prop] === "string") console.log(prop, movie[prop]);
+  }
+}
+showProperties(movie);
