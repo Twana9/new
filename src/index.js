@@ -382,12 +382,28 @@
 // }
 // showProperties(movie);
 
-console.log(sum(10));
+// console.log(sum(10));
 
-function sum(limit) {
-  let sum = 0;
-  for (let i = 0; i <= limit; i++)
-    if (i % 3 === 0 || i % 5 === 0) sum = sum + i;
+// function sum(limit) {
+//   let sum = 0;
+//   for (let i = 0; i <= limit; i++)
+//     if (i % 3 === 0 || i % 5 === 0) sum = sum + i;
 
-  return sum;
+//   return sum;
+// }
+
+function checkSpeed(speed) {
+  speed = speed / 10;
+  let point = 0;
+  if (speed < 7.5) console.log("ok");
+  if (speed >= 13) {
+    console.log("Licence suspended");
+  }
+  if (speed >= 7.5) {
+    let current = Math.floor(speed) - 7;
+    let addp = (current * 10) / 5;
+    point += addp;
+    console.log(point);
+  }
 }
+checkSpeed(70);
