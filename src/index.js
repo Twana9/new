@@ -392,19 +392,30 @@
 //   return sum;
 // }
 
-function checkSpeed(speed) {
-  speed = speed / 10;
-  let point = 0;
-  if (speed < 7.5) console.log("ok");
-  if (speed >= 13) {
-    console.log("Licence suspended");
-  }
-  if (speed >= 7.5) {
-    let current = speed - 7;
-    let addp = (current * 10) / 5;
+// function checkSpeed(speed) {
+//   speed = speed / 10;
+//   let point = 0;
+//   if (speed < 7.5) console.log("ok");
+//   if (speed >= 13) {
+//     console.log("Licence suspended");
+//   }
+//   if (speed >= 7.5) {
+//     let current = speed - 7;
+//     let addp = (current * 10) / 5;
 
-    point += Math.floor(addp);
-    console.log(point);
+//     point += Math.floor(addp);
+//     console.log(point);
+//   }
+// }
+checkSpeed(129);
+function checkSpeed(speed) {
+  const speedLimit = 70;
+  const pointValue = 5;
+  if (speed < speedLimit + pointValue) console.log("ok");
+  else {
+    const point = Math.floor((speed - speedLimit) / 5);
+
+    if (point >= 12) console.log("License Suspended");
+    else console.log("Point: ", point);
   }
 }
-checkSpeed(85);
