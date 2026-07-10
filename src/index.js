@@ -400,10 +400,11 @@ function checkSpeed(speed) {
     console.log("Licence suspended");
   }
   if (speed >= 7.5) {
-    let current = Math.floor(speed) - 7;
+    let current = speed - 7;
     let addp = (current * 10) / 5;
-    point += addp;
+
+    point += Math.floor(addp);
     console.log(point);
   }
 }
-checkSpeed(70);
+checkSpeed(85);
