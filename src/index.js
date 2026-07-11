@@ -407,17 +407,27 @@
 //     console.log(point);
 //   }
 // }
-checkSpeed(800);
-function checkSpeed(speed) {
-  const speedLimit = 70;
-  const kmPerPoint = 5;
-  if (speed < speedLimit + kmPerPoint) {
-    console.log("ok");
-    return;
+// checkSpeed(800);
+// function checkSpeed(speed) {
+//   const speedLimit = 70;
+//   const kmPerPoint = 5;
+//   if (speed < speedLimit + kmPerPoint) {
+//     console.log("ok");
+//     return;
+//   }
+
+//   const point = Math.floor((speed - speedLimit) / kmPerPoint);
+
+//   if (point >= 12) console.log("License Suspended");
+//   else console.log("Point: ", point);
+// }
+showStars(5);
+function showStars(rows) {
+  for (let row = 1; row <= rows; row++) {
+    let pattern = "";
+    for (let i = 0; i < row; i++) {
+      pattern += "*";
+    }
+    console.log(pattern);
   }
-
-  const point = Math.floor((speed - speedLimit) / kmPerPoint);
-
-  if (point >= 12) console.log("License Suspended");
-  else console.log("Point: ", point);
 }
