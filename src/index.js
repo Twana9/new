@@ -421,13 +421,30 @@
 //   if (point >= 12) console.log("License Suspended");
 //   else console.log("Point: ", point);
 // }
-showStars(5);
-function showStars(rows) {
-  for (let row = 1; row <= rows; row++) {
-    let pattern = "";
-    for (let i = 0; i < row; i++) {
-      pattern += "*";
-    }
-    console.log(pattern);
-  }
+// showStars(5);
+// function showStars(rows) {
+//   for (let row = 1; row <= rows; row++) {
+//     let pattern = "";
+//     for (let i = 0; i < row; i++) {
+//       pattern += "*";
+//     }
+//     console.log(pattern);
+//   }
+// }
+
+const marks = [81, 89, 99];
+function calculateGrade(marks) {
+  let totalMark = 0;
+  for (letitem of marks) totalMark += item;
+
+  let averageMark = totalMark / marks.length;
+
+  averageMark = Math.round(averageMark);
+
+  if (averageMark < 60) return "F";
+  if (averageMark < 70) return "D";
+  if (averageMark < 80) return "C";
+  if (averageMark < 90) return "B";
+  return "A";
 }
+console.log(calculateGrade(marks));
