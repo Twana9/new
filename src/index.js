@@ -432,19 +432,30 @@
 //   }
 // }
 
-const marks = [81, 89, 99];
-function calculateGrade(marks) {
-  let totalMark = 0;
-  for (letitem of marks) totalMark += item;
+// const marks = [81, 89, 99];
+// function calculateGrade(marks) {
+//   let totalMark = 0;
+//   for (letitem of marks) totalMark += item;
 
-  let averageMark = totalMark / marks.length;
+//   let averageMark = totalMark / marks.length;
 
-  averageMark = Math.round(averageMark);
+//   averageMark = Math.round(averageMark);
 
-  if (averageMark < 60) return "F";
-  if (averageMark < 70) return "D";
-  if (averageMark < 80) return "C";
-  if (averageMark < 90) return "B";
-  return "A";
+//   if (averageMark < 60) return "F";
+//   if (averageMark < 70) return "D";
+//   if (averageMark < 80) return "C";
+//   if (averageMark < 90) return "B";
+//   return "A";
+// }
+// console.log(calculateGrade(marks));
+
+function showPrime(limit) {
+  for (let i = 2; i <= limit; i++) {
+    let isPrime = true;
+    for (let j = 2; j < i; j++) {
+      if (i % j === 0) isPrime = false;
+    }
+    console.log();
+  }
 }
-console.log(calculateGrade(marks));
+showPrime(20);
