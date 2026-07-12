@@ -449,13 +449,14 @@
 // }
 // console.log(calculateGrade(marks));
 
-function showPrime(limit) {
-  for (let i = 2; i <= limit; i++) {
-    let isPrime = true;
-    for (let j = 2; j < i; j++) {
-      if (i % j === 0) isPrime = false;
-    }
-    console.log();
-  }
-}
 showPrime(20);
+function showPrime(limit) {
+  for (let number = 2; number <= limit; number++)
+    if (isPrime(number)) console.log(number);
+}
+
+function isPrime(number) {
+  for (let factor = 2; factor < number; factor++)
+    if (number % factor === 0) return false;
+  return true;
+}
