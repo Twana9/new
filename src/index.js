@@ -431,6 +431,17 @@
 //     console.log(pattern);
 //   }
 // }
+// showPrime(20);
+// function showPrime(limit) {
+//   for (let number = 2; number <= limit; number++)
+//     if (isPrime(number)) console.log(number);
+// }
+
+// function isPrime(number) {
+//   for (let factor = 2; factor < number; factor++)
+//     if (number % factor === 0) return false;
+//   return true;
+// }
 
 // const marks = [81, 89, 99];
 // function calculateGrade(marks) {
@@ -449,14 +460,14 @@
 // }
 // console.log(calculateGrade(marks));
 
-showPrime(20);
-function showPrime(limit) {
-  for (let number = 2; number <= limit; number++)
-    if (isPrime(number)) console.log(number);
-}
+// showPrime(20);
+// function showPrime(limit) {
+//   for (let number = 2; number <= limit; number++)
+//     if (isPrime(number)) console.log(number);
+// }
+// function isPrime(number) {
+//   for (let factor = 2; factor < number; factor++)
+//     if (number % factor === 0) return false;
 
-function isPrime(number) {
-  for (let factor = 2; factor < number; factor++)
-    if (number % factor === 0) return false;
-  return true;
-}
+//   return true;
+// }
