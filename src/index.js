@@ -471,14 +471,17 @@
 
 //   return true;
 // }
-function createCircle(radius, location) {
+function createCircle(radius) {
   return {
-    radius: radius,
-    location: location,
-    isVisible: true,
-    draw: function () {
+    radius,
+
+    draw() {
       console.log("draw");
     },
   };
 }
-console.log(createCircle(1, { x: 1, y: 1 }).location.x);
+const c1 = createCircle(1);
+console.log(c1);
+const c2 = createCircle(2);
+c2.d = 5;
+console.log(c2);
