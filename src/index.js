@@ -471,17 +471,52 @@
 
 //   return true;
 // }
-function createCircle(radius) {
-  return {
-    radius,
+// function createCircle(radius) {
+//   return {
+//     radius,
 
-    draw() {
-      console.log("draw");
-    },
-  };
+//     draw() {
+//       console.log("draw");
+//     },
+//   };
+// }
+// const c1 = createCircle(1);
+// console.log(c1);
+// const c2 = createCircle(2);
+
+// console.log(c2);
+
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.draw = function () {
+//     console.log("draw");
+//   };
+// }
+// const circle = new Circle(1, (d = 3));
+// circle.d = d;
+// delete circle.radius;
+// console.log(circle);
+
+// const circle = {
+//   radius: 1,
+// };
+// circle.color = "yellow";
+// circle.draw = function () {};
+
+// delete circle.color;
+// delete circle.draw;
+// console.log(circle);
+
+let number = 10;
+function increase(number) {
+  number++;
 }
-const c1 = createCircle(1);
-console.log(c1);
-const c2 = createCircle(2);
-c2.d = 5;
-console.log(c2);
+increase(number);
+console.log(number);
+
+let obj = { number: 10 };
+function increase2(obj) {
+  obj.number++;
+}
+increase2(obj);
+console.log(obj);
