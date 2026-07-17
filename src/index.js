@@ -507,16 +507,25 @@
 // delete circle.draw;
 // console.log(circle);
 
-let number = 10;
-function increase(number) {
-  number++;
-}
-increase(number);
-console.log(number);
+// let number = 10;
+// function increase(number) {
+//   number++;
+// }
+// increase(number);
+// console.log(number);
 
-let obj = { number: 10 };
-function increase2(obj) {
-  obj.number++;
-}
-increase2(obj);
-console.log(obj);
+// let obj = { number: 10 };
+// function increase2(obj) {
+//   obj.number++;
+// }
+// increase2(obj);
+// console.log(obj);
+const circle = {
+  radius: 1,
+  draw() {
+    console.log("draw");
+  },
+};
+const circle1 = { ...circle };
+
+console.log(circle1);
