@@ -1,7 +1,56 @@
-body {
+/* body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2em;
 }
 #myh1 {
   color: red;
+} */
+.btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition:
+    opacity 0.15s,
+    transform 0.1s;
+  vertical-align: top;
+}
+.btn:hover {
+  opacity: 0.7;
+  transform: translateY(2px);
+}
+.btn2 {
+  background-color: white;
+  color: rgb(41, 121, 187);
+  border-color: rgb(41, 121, 187);
+  border-style: solid;
+  border-width: 1px;
+  padding: 9px 16px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition:
+    background-color 1s,
+    color 1s;
+}
+.btn2:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgb(41, 121, 187);
+  color: white;
+}
+.btn2:active {
+  opacity: 0.75;
+}
+.a {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+.b {
+  padding: 50px;
+  background-color: red;
 }
