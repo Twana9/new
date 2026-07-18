@@ -529,3 +529,6 @@ const circle = {
 const circle1 = { ...circle };
 
 console.log(circle1);
+
+const message = "This is my first message";
+console.log(message.split(" "));
