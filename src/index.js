@@ -554,25 +554,55 @@
 // const fac = new Address2("shahidan", "koya", 99);
 // console.log(fac);
 
-function Address(street, city, zipCode) {
-  this.street = street;
-  this.city = city;
-  this.zipCode = zipCode;
-}
-const address1 = new Address("shahidan", "koya", 99);
-const address2 = new Address("shahidan", "koya", 99);
-const address3 = address1;
+// function Address(street, city, zipCode) {
+//   this.street = street;
+//   this.city = city;
+//   this.zipCode = zipCode;
+// }
+// const address1 = new Address("shahidan", "koya", 99);
+// const address2 = new Address("shahidan", "koya", 99);
+// const address3 = address1;
 
-function areEqual(address1, address2) {
-  return (
-    address1.street === address2.street &&
-    address1.city === address2.city &&
-    address1.zipCode === address2.zipCode
-  );
+// function areEqual(address1, address2) {
+//   return (
+//     address1.street === address2.street &&
+//     address1.city === address2.city &&
+//     address1.zipCode === address2.zipCode
+//   );
+// }
+// function areSame(address1, address2) {
+//   return address1 === address2;
+// }
+// console.log(areEqual(address1, address2));
+// console.log(areSame(address1, address2));
+// console.log(areSame(address1, address3));
+
+// const blogPost = {
+//   title: "a",
+//   body: "s",
+//   author: "dfs",
+//   views: 10,
+//   comments: [
+//     {
+//       author: "dsf",
+//       body: "sdfdfs",
+//     },
+//     {
+//       author: "dsf",
+//       body: "sdfdfs",
+//     },
+//   ],
+//   isLive: false,
+// };
+// console.log(blogPost);
+
+function Post(title, author, body) {
+  ((this.title = title),
+    (this.author = author),
+    (this.body = body),
+    (this.comments = []),
+    (this.isLive = false),
+    (this.views = 0));
 }
-function areSame(address1, address2) {
-  return address1 === address2;
-}
-console.log(areEqual(address1, address2));
-console.log(areSame(address1, address2));
-console.log(areSame(address1, address3));
+const post = new Post("a", "b", "d");
+console.log(post);
