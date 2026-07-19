@@ -596,13 +596,31 @@
 // };
 // console.log(blogPost);
 
-function Post(title, author, body) {
-  ((this.title = title),
-    (this.author = author),
-    (this.body = body),
-    (this.comments = []),
-    (this.isLive = false),
-    (this.views = 0));
-}
-const post = new Post("a", "b", "d");
-console.log(post);
+// function Post(title, author, body) {
+//   ((this.title = title),
+//     (this.author = author),
+//     (this.body = body),
+//     (this.comments = []),
+//     (this.isLive = false),
+//     (this.views = 0));
+// }
+// const post = new Post("a", "b", "d");
+// console.log(post);
+
+const priceRange = [
+  { label: "$", tooltip: "Inexpensive", minPerPerson: 0, maxPerPerson: 10 },
+  { label: "$$", tooltip: "Moderate", minPerPerson: 11, maxPerPerson: 20 },
+  { label: "$$$", tooltip: "Expensive", minPerPerson: 21, maxPerPerson: 50 },
+];
+let restaurants = [
+  {
+    averagePerPerson: 5,
+    name: "arabana",
+  },
+  {
+    averagePerPerson: 15,
+    name: "kntaki",
+  },
+];
+for (let restaurant of restaurants)
+  if (restaurant.averagePerPerson > 10) console.log(restaurant.name);
