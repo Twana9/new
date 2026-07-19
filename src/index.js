@@ -520,15 +520,44 @@
 // }
 // increase2(obj);
 // console.log(obj);
-const circle = {
-  radius: 1,
-  draw() {
-    console.log("draw");
-  },
-};
-const circle1 = { ...circle };
+// const circle = {
+//   radius: 1,
+//   draw() {
+//     console.log("draw");
+//   },
+// };
+// const circle1 = { ...circle };
 
-console.log(circle1);
+// console.log(circle1);
 
-const message = "This is my first message";
-console.log(message.split(" "));
+// const message = "This is my first message";
+// console.log(message.split(" "));
+
+// const address = {
+//   street: "shahidan",
+//   city: "koya",
+//   zipCode: 99,
+// };
+
+// function showAddress(address) {
+//   for (let key in address) console.log(key, address[key]);
+// }
+// showAddress(address);
+
+function Address2(street, city, zipCode) {
+  return {
+    street,
+    city,
+    zipCode,
+  };
+}
+const fac = new Address2("shahidan", "koya", 99);
+console.log(fac);
+
+function Address1(street, city, zipCode) {
+  this.street = street;
+  this.city = city;
+  this.zipCode = zipCode;
+}
+const add = new Address1("shahidan", "koya", 99);
+console.log(add);
