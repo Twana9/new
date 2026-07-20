@@ -607,20 +607,39 @@
 // const post = new Post("a", "b", "d");
 // console.log(post);
 
-const priceRange = [
-  { label: "$", tooltip: "Inexpensive", minPerPerson: 0, maxPerPerson: 10 },
-  { label: "$$", tooltip: "Moderate", minPerPerson: 11, maxPerPerson: 20 },
-  { label: "$$$", tooltip: "Expensive", minPerPerson: 21, maxPerPerson: 50 },
-];
-let restaurants = [
-  {
-    averagePerPerson: 5,
-    name: "arabana",
-  },
-  {
-    averagePerPerson: 15,
-    name: "kntaki",
-  },
-];
-for (let restaurant of restaurants)
-  if (restaurant.averagePerPerson > 10) console.log(restaurant.name);
+// const priceRange = [
+//   { label: "$", tooltip: "Inexpensive", minPerPerson: 0, maxPerPerson: 10 },
+//   { label: "$$", tooltip: "Moderate", minPerPerson: 11, maxPerPerson: 20 },
+//   { label: "$$$", tooltip: "Expensive", minPerPerson: 21, maxPerPerson: 50 },
+// ];
+// let restaurants = [
+//   {
+//     averagePerPerson: 5,
+//     name: "arabana",
+//   },
+//   {
+//     averagePerPerson: 15,
+//     name: "kntaki",
+//   },
+// ];
+// for (let restaurant of restaurants)
+//   if (restaurant.averagePerPerson > 10) console.log(restaurant.name);
+
+// const number = [3, 4];
+// number.push(5, 6);
+// number.unshift(1, 2);
+// number.splice(2, 0, "a", "b");
+// console.log(number);
+
+//logistic
+//payment
+//hr
+//marketing
+//promoter
+//attorney
+//economic ( manager, funding)
+
+const numbers = [1, 2, 3, 1, 4];
+console.log(numbers.indexOf(1, 2));
+console.log(numbers.lastIndexOf(1));
+console.log(numbers.includes(1));
