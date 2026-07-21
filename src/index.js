@@ -639,7 +639,31 @@
 //attorney
 //economic ( manager, funding)
 
-const numbers = [1, 2, 3, 1, 4];
-console.log(numbers.indexOf(1, 2));
-console.log(numbers.lastIndexOf(1));
-console.log(numbers.includes(1));
+// const numbers = [1, 2, 3, 1, 4];
+// console.log(numbers.indexOf(1, 2));
+// console.log(numbers.lastIndexOf(1));
+// console.log(numbers.includes(1));
+
+const course = [
+  { id: 0, name: "a" },
+  { id: 1, name: "b" },
+];
+console.log(course.find((element) => element.name === "b"));
+
+// //End
+// const last = numbers.pop();
+
+// //beginning
+// const first = numbers.shift();
+
+// const a = numbers.splice(2, 2);
+
+let numbers = [1, 2, 3, 4];
+let another = numbers;
+
+// numbers = [];
+numbers.length = 0;
+
+console.log(another);
+
+console.log(numbers);
