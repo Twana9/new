@@ -644,11 +644,11 @@
 // console.log(numbers.lastIndexOf(1));
 // console.log(numbers.includes(1));
 
-const course = [
-  { id: 0, name: "a" },
-  { id: 1, name: "b" },
-];
-console.log(course.find((element) => element.name === "b"));
+// const course = [
+//   { id: 0, name: "a" },
+//   { id: 1, name: "b" },
+// ];
+// console.log(course.find((element) => element.name === "b"));
 
 // //End
 // const last = numbers.pop();
@@ -658,12 +658,23 @@ console.log(course.find((element) => element.name === "b"));
 
 // const a = numbers.splice(2, 2);
 
-let numbers = [1, 2, 3, 4];
-let another = numbers;
+// let numbers = [1, 2, 3, 4];
+// let another = numbers;
 
-// numbers = [];
-numbers.length = 0;
+// // numbers = [];
+// numbers.length = 0;
 
-console.log(another);
+// console.log(another);
 
-console.log(numbers);
+// console.log(numbers);
+
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+// const combined = ["d", ...first, "a", ...second];
+// console.log(combined);
+
+// const sliced = combined.slice(2);
+// console.log(sliced);
+
+const number = [1, 2, 3];
+number.forEach((element, index) => console.log(index, element));
