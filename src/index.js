@@ -676,5 +676,31 @@
 // const sliced = combined.slice(2);
 // console.log(sliced);
 
-const number = [1, 2, 3];
-number.forEach((element, index) => console.log(index, element));
+// const number = [1, 2, 3];
+// number.forEach((element, index) => console.log(index, element));
+
+// const joined = numbers.join(",");
+
+// console.log(joined);
+
+// const message = "This is my first message";
+// const split = message.split(" ");
+// console.log(split);
+// const combined = split.join("-");
+// console.log(combined);
+
+// const numbers = [2, 3, 1];
+
+// numbers.sort();
+// console.log(numbers);
+
+// numbers.reverse();
+// console.log(numbers);
+
+const course = [
+  { id: 1, name: "js" },
+  { id: 0, name: "react js" },
+];
+// course.sort((a, b) => a.id - b.id);
+course.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+console.log(course);
