@@ -712,10 +712,16 @@ const numbers = [1, -1, 2, 3];
 // const somePositive = numbers.some((element) => element >= 0);
 // console.log(somePositive);
 
-const newArr = numbers.filter((n) => n >= 0);
-console.log(newArr);
-
 // console.log(course.filter((n) => n.name.startsWith("r")));
-const mapped = newArr.map((n) => "<li>" + n + "</li>");
-const lists = "<ul>" + mapped.join("") + "</ul>";
-console.log(lists);
+// const mapped = newArr.map((n) => "<li>" + n + "</li>");
+// const lists = "<ul>" + mapped.join("") + "</ul>";
+// console.log(lists);
+
+const mapped = numbers
+  .filter((n) => n >= 0)
+  .map((n) => ({
+    value: n,
+  }))
+  .filter((obj) => obj.value > 1)
+  .map((obj) => obj.value);
+console.log(mapped);
