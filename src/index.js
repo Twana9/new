@@ -697,10 +697,17 @@
 // numbers.reverse();
 // console.log(numbers);
 
-const course = [
-  { id: 1, name: "js" },
-  { id: 0, name: "react js" },
-];
-// course.sort((a, b) => a.id - b.id);
-course.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
-console.log(course);
+// const course = [
+//   { id: 1, name: "js" },
+//   { id: 0, name: "react js" },
+// ];
+// // course.sort((a, b) => a.id - b.id);
+// course.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+// console.log(course);
+
+const numbers = [1, -1, 2, 3];
+
+const allPositive = numbers.every((element) => element >= 0);
+console.log(allPositive);
+const somePositive = numbers.some((element) => element >= 0);
+console.log(somePositive);
