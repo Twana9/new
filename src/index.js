@@ -750,9 +750,7 @@ const course = [
 //   return false;
 // }
 
-const numbers = [1, 2, 3, 4, 1, 1, 2];
-
-console.log(except(numbers, [1, 2]));
+// console.log(except(numbers, [1, 2]));
 
 // function except(array, excluded) {
 //   for (let except of excluded)
@@ -763,9 +761,25 @@ console.log(except(numbers, [1, 2]));
 //   return array;
 // }
 
-function except(array, excluded) {
-  const output = [];
-  for (let except of array) if (!excluded.includes(except)) output.push(except);
+// function except(array, excluded) {
+//   const output = [];
+//   for (let except of array) if (!excluded.includes(except)) output.push(except);
 
-  return output;
+//   return output;
+// }
+
+const numbers = [1, 2, 3, 4];
+
+const result = move(numbers, 1, -5);
+console.log(result);
+
+function move(array, index, offset) {
+  if (Math.abs(offset) > array.length) console.error("Invalid Offset");
+  else {
+    const output = [];
+    for (let item of array) if (item !== array[index]) output.push(item);
+
+    output.splice(index + offset, 0, array[index]);
+    return output;
+  }
 }
