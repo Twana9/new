@@ -1,6 +1,6 @@
 .video-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 40px;
   column-gap: 18px;
   background-color: whitesmoke;
@@ -9,7 +9,7 @@
 .video-preview {
   display: flex;
   flex-direction: column;
-  width:;
+  width: 100%;
   /* align-items: space-evenly; */
   justify-content: space-between;
 }
