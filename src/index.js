@@ -720,18 +720,52 @@
 //   .map((obj) => obj.value);
 //   console.log(mapped);
 
-const numbers = [1, -1, 2, 3];
 // const result = numbers.reduce(
 //   (accumulator, currentValue) => accumulator + currentValue,
 // );
 // console.log(result);
 
 const course = [
+  // const result = course.reduce((accumulator, currentValue) => {
+  //  return accumulator + currentValue.id;
+  // }, 0);
+  // console.log(result);
+  // const numbers = arraFromRange(1, 4);
+  // console.log(numbers);
+
+  // function arraFromRange(min, max) {
+  //   let range = [];
+  //   for (let i = min; i <= max; i++) range.push(i);
+  //   return range;
+  // }
   { id: 1, name: "js" },
-  { id: 5, name: "react js" },
+  { id: 0, name: "react js" },
 ];
 
-const result = course.reduce((accumulator, currentValue) => {
-  return accumulator + currentValue.id;
-}, 0);
-console.log(result);
+// console.log(includes(numbers, 1));
+
+// function includes(array, searchElement) {
+//   for (let element of array) if (element === searchElement) return true;
+
+//   return false;
+// }
+
+const numbers = [1, 2, 3, 4, 1, 1, 2];
+
+console.log(except(numbers, [1, 2]));
+
+// function except(array, excluded) {
+//   for (let except of excluded)
+//     while (array.includes(except)) {
+//       array.splice(array.indexOf(except), 1);
+//     }
+
+//   return array;
+// }
+
+function except(array, excluded) {
+  const output = [];
+  for (let except of array) if (!excluded.includes(except)) output.push(except);
+
+  return output;
+}
