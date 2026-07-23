@@ -697,15 +697,9 @@
 // numbers.reverse();
 // console.log(numbers);
 
-const course = [
-  { id: 1, name: "js" },
-  { id: 0, name: "react js" },
-];
 // // course.sort((a, b) => a.id - b.id);
 // course.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
 // console.log(course);
-
-const numbers = [1, -1, 2, 3];
 
 // const allPositive = numbers.every((element) => element >= 0);
 // console.log(allPositive);
@@ -717,11 +711,27 @@ const numbers = [1, -1, 2, 3];
 // const lists = "<ul>" + mapped.join("") + "</ul>";
 // console.log(lists);
 
-const mapped = numbers
-  .filter((n) => n >= 0)
-  .map((n) => ({
-    value: n,
-  }))
-  .filter((obj) => obj.value > 1)
-  .map((obj) => obj.value);
-console.log(mapped);
+// const mapped = numbers
+// .filter((n) => n >= 0)
+// .map((n) => ({
+//     value: n,
+//   }))
+//   .filter((obj) => obj.value > 1)
+//   .map((obj) => obj.value);
+//   console.log(mapped);
+
+const numbers = [1, -1, 2, 3];
+// const result = numbers.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+// );
+// console.log(result);
+
+const course = [
+  { id: 1, name: "js" },
+  { id: 5, name: "react js" },
+];
+
+const result = course.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue.id;
+}, 0);
+console.log(result);
