@@ -800,15 +800,30 @@ const course = [
 //   );
 // }
 
-const numbers = [1, 2, 3, 4];
+// const numbers = [1, 2, 3, 4];
 
-const max = getMax(numbers);
-console.log(max);
+// const max = getMax(numbers);
+// console.log(max);
 
-function getMax(array) {
-  if (array.length === 0) return undefined;
-  // let max = array[0];
-  // for (let element of array) if (element > max) max = element;
-  // return max;
-  return array.reduce((acc, cur) => (cur > acc ? cur : acc));
+// function getMax(array) {
+//   if (array.length === 0) return undefined;
+//   // let max = array[0];
+//   // for (let element of array) if (element > max) max = element;
+//   // return max;
+//   return array.reduce((acc, cur) => (cur > acc ? cur : acc));
+// }
+
+const movies = [
+  { title: "a", year: 2018, rating: 4.5 },
+  { title: "b", year: 2018, rating: 4.7 },
+  { title: "c", year: 2018, rating: 3 },
+  { title: "d", year: 2017, rating: 4.5 },
+];
+console.log(sortingMovies(movies));
+
+function sortingMovies(array) {
+  return array
+    .filter((a) => a.year === 2018 && a.rating >= 4)
+    .sort((a, b) => b.rating - a.rating)
+    .map((a) => a.title);
 }
