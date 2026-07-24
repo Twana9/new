@@ -770,16 +770,20 @@ const course = [
 
 const numbers = [1, 2, 3, 4];
 
-const result = move(numbers, 1, -5);
+const result = move(numbers, 1, 1);
 console.log(result);
 
 function move(array, index, offset) {
-  if (Math.abs(offset) > array.length) console.error("Invalid Offset");
-  else {
-    const output = [];
-    for (let item of array) if (item !== array[index]) output.push(item);
-
-    output.splice(index + offset, 0, array[index]);
-    return output;
+  const posision = index + offset;
+  if (posision >= array.length || posision < 0) {
+    console.error("Invalid Offset");
+    return;
   }
+
+  const output = [...array];
+  const spliced = output.splice(index, 1)[0];
+
+  output.splice(posision, 0, spliced);
+
+  return output;
 }
