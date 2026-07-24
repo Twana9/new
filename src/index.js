@@ -786,17 +786,29 @@ const course = [
 //   return output;
 // }
 
-const numbers = [1, 2, 3, 4, 1, 1];
-const result = countOccurrences(numbers, 1);
-console.log(result);
+// const result = countOccurrences(numbers, 1);
+// console.log(result);
 
-function countOccurrences(array, searchElement) {
-  // let count = 0;
-  // for (let element of array) if (element === searchElement) count++;
-  // return count;
-  return array.reduce(
-    (accumulator, currentValue) =>
-      accumulator + (currentValue === searchElement ? 1 : 0),
-    0,
-  );
+// function countOccurrences(array, searchElement) {
+//   // let count = 0;
+//   // for (let element of array) if (element === searchElement) count++;
+//   // return count;
+//   return array.reduce(
+//     (accumulator, currentValue) =>
+//       accumulator + (currentValue === searchElement ? 1 : 0),
+//     0,
+//   );
+// }
+
+const numbers = [1, 2, 3, 4];
+
+const max = getMax(numbers);
+console.log(max);
+
+function getMax(array) {
+  if (array.length === 0) return undefined;
+  // let max = array[0];
+  // for (let element of array) if (element > max) max = element;
+  // return max;
+  return array.reduce((acc, cur) => (cur > acc ? cur : acc));
 }
