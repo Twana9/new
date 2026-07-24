@@ -813,17 +813,17 @@ const course = [
 //   return array.reduce((acc, cur) => (cur > acc ? cur : acc));
 // }
 
-const movies = [
-  { title: "a", year: 2018, rating: 4.5 },
-  { title: "b", year: 2018, rating: 4.7 },
-  { title: "c", year: 2018, rating: 3 },
-  { title: "d", year: 2017, rating: 4.5 },
-];
-console.log(sortingMovies(movies));
+// const movies = [
+//   { title: "a", year: 2018, rating: 4.5 },
+//   { title: "b", year: 2018, rating: 4.7 },
+//   { title: "c", year: 2018, rating: 3 },
+//   { title: "d", year: 2017, rating: 4.5 },
+// ];
+// console.log(sortingMovies(movies));
 
-function sortingMovies(array) {
-  return array
-    .filter((a) => a.year === 2018 && a.rating >= 4)
-    .sort((a, b) => b.rating - a.rating)
-    .map((a) => a.title);
-}
+// function sortingMovies(array) {
+//   return array
+//     .filter((a) => a.year === 2018 && a.rating >= 4)
+//     .sort((a, b) => b.rating - a.rating)
+//     .map((a) => a.title);
+// }
