@@ -768,22 +768,35 @@ const course = [
 //   return output;
 // }
 
-const numbers = [1, 2, 3, 4];
+// const result = move(numbers, 1, 1);
+// console.log(result);
 
-const result = move(numbers, 1, 1);
+// function move(array, index, offset) {
+//   const posision = index + offset;
+//   if (posision >= array.length || posision < 0) {
+//     console.error("Invalid Offset");
+//     return;
+//   }
+
+//   const output = [...array];
+//   const spliced = output.splice(index, 1)[0];
+
+//   output.splice(posision, 0, spliced);
+
+//   return output;
+// }
+
+const numbers = [1, 2, 3, 4, 1, 1];
+const result = countOccurrences(numbers, 1);
 console.log(result);
 
-function move(array, index, offset) {
-  const posision = index + offset;
-  if (posision >= array.length || posision < 0) {
-    console.error("Invalid Offset");
-    return;
-  }
-
-  const output = [...array];
-  const spliced = output.splice(index, 1)[0];
-
-  output.splice(posision, 0, spliced);
-
-  return output;
+function countOccurrences(array, searchElement) {
+  // let count = 0;
+  // for (let element of array) if (element === searchElement) count++;
+  // return count;
+  return array.reduce(
+    (accumulator, currentValue) =>
+      accumulator + (currentValue === searchElement ? 1 : 0),
+    0,
+  );
 }
