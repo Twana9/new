@@ -827,3 +827,22 @@ const course = [
 //     .sort((a, b) => b.rating - a.rating)
 //     .map((a) => a.title);
 // }
+
+// const move = function walk() {
+//   console.log("walk");
+// };
+// move();
+
+// function sum() {
+//   let sum = 0;
+//   for (item of arguments) sum += item;
+
+//   return sum;
+// }
+// console.log(sum(1, 2, 3, 4, 5, 10, 1));
+
+function sum(discount, ...prices) {
+  const total = prices.reduce((a, b) => a + b);
+  return total * (1 - discount);
+}
+console.log(sum(0.1, 20, 30));
