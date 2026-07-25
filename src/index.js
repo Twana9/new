@@ -846,3 +846,15 @@ function sum(discount, ...prices) {
   return total * (1 - discount);
 }
 console.log(sum(0.1, 20, 30));
+
+function interest(principal, rate = 3.5, years = 5) {
+  return ((principal * rate) / 100) * years;
+}
+console.log(interest(10000));
+
+const person = {
+  firstName: "Twana",
+  lastName: "Koye",
+  fullName: () => `${person.firstName} ${person.lastName}`,
+};
+console.log(person.fullName());
