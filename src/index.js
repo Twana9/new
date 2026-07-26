@@ -852,25 +852,34 @@ const course = [
 // }
 // console.log(interest(10000));
 
-const person = {
-  firstName: "Twana",
-  lastName: "Koye",
-  get fullName() {
-    return `${this.firstName} ${this.lastName}`;
-  },
-  set fullName(value) {
-    if (typeof value !== "string") throw new Error("the value is not string.");
+// const person = {
+//   firstName: "Twana",
+//   lastName: "Koye",
+//   get fullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+//   set fullName(value) {
+//     if (typeof value !== "string") throw new Error("the value is not string.");
 
-    const parts = value.split(" ");
-    if (parts.length !== 2) throw new Error("Enter a first and last name");
+//     const parts = value.split(" ");
+//     if (parts.length !== 2) throw new Error("Enter a first and last name");
 
-    this.firstName = parts[0];
-    this.lastName = parts[1];
+//     this.firstName = parts[0];
+//     this.lastName = parts[1];
+//   },
+// };
+// try {
+//   person.fullName = "null f";
+// } catch (e) {
+//   alert(e);
+// }
+// console.log(person.fullName);
+
+const video = {
+  title: "a",
+  tags: ["a", "b", "c"],
+  showTags() {
+    this.tags.forEach((tag) => console.log(this.title, tag));
   },
 };
-try {
-  person.fullName = "null f";
-} catch (e) {
-  alert(e);
-}
-console.log(person.fullName);
+video.showTags();
