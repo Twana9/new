@@ -841,28 +841,36 @@ const course = [
 // }
 // console.log(sum(1, 2, 3, 4, 5, 10, 1));
 
-function sum(discount, ...prices) {
-  const total = prices.reduce((a, b) => a + b);
-  return total * (1 - discount);
-}
-console.log(sum(0.1, 20, 30));
+// function sum(discount, ...prices) {
+//   const total = prices.reduce((a, b) => a + b);
+//   return total * (1 - discount);
+// }
+// console.log(sum(0.1, 20, 30));
 
-function interest(principal, rate = 3.5, years = 5) {
-  return ((principal * rate) / 100) * years;
-}
-console.log(interest(10000));
+// function interest(principal, rate = 3.5, years = 5) {
+//   return ((principal * rate) / 100) * years;
+// }
+// console.log(interest(10000));
 
 const person = {
   firstName: "Twana",
   lastName: "Koye",
   get fullName() {
-    return `${person.firstName} ${person.lastName}`;
+    return `${this.firstName} ${this.lastName}`;
   },
   set fullName(value) {
+    if (typeof value !== "string") throw new Error("the value is not string.");
+
     const parts = value.split(" ");
+    if (parts.length !== 2) throw new Error("Enter a first and last name");
+
     this.firstName = parts[0];
     this.lastName = parts[1];
   },
 };
-person.fullName = "mosh hamadani";
-console.log(person);
+try {
+  person.fullName = "null f";
+} catch (e) {
+  alert(e);
+}
+console.log(person.fullName);
