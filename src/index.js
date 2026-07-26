@@ -855,6 +855,14 @@ console.log(interest(10000));
 const person = {
   firstName: "Twana",
   lastName: "Koye",
-  fullName: () => `${person.firstName} ${person.lastName}`,
+  get fullName() {
+    return `${person.firstName} ${person.lastName}`;
+  },
+  set fullName(value) {
+    const parts = value.split(" ");
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  },
 };
-console.log(person.fullName());
+person.fullName = "mosh hamadani";
+console.log(person);
