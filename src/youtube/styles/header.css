@@ -8,6 +8,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 10;
 }
 .left-section {
   display: flex;
@@ -83,6 +84,20 @@
 }
 .right-section > div > img {
   height: 24px;
+}
+.notfication-btn {
+  position: relative;
+}
+.notfication-count {
+  font-family: Roboto, Arial;
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(216, 10, 10);
+  color: white;
+  border-radius: 10px;
+  font-size: 11px;
+  padding: 2px 5px;
 }
 .right-section > .my-channel > img {
   height: 32px;
