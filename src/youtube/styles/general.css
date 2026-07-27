@@ -1,6 +1,8 @@
 body {
+  background-color: whitesmoke;
   margin: 0;
   padding-top: 60px;
+  padding-left: 60px;
 }
 p {
   font-family: Roboto, Arial;
