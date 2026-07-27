@@ -884,20 +884,40 @@ const course = [
 // };
 // video.showTags();
 
-console.log(sum([1, 2, 3, 4, 5]));
+// console.log(sum([1, 2, 3, 4, 5]));
 
-function sum(...numbers) {
-  if (numbers.length === 1 && Array.isArray(numbers[0]))
-    numbers = [...numbers[0]];
+// function sum(...numbers) {
+//   if (numbers.length === 1 && Array.isArray(numbers[0]))
+//     numbers = [...numbers[0]];
 
-  return numbers.reduce((a, b) => a + b);
+//   return numbers.reduce((a, b) => a + b);
+// }
+
+// const circle = {
+//   radius: 1,
+//   get area() {
+//     return Math.PI * this.radius * this.radius;
+//   },
+// };
+// circle.radius = 2;
+// console.log(circle.area);
+
+try {
+  const numbers = [1, 2, 3, 4, 5, 1, 1];
+  const result = countOccurrences(true, 1);
+  console.log(result);
+} catch (e) {
+  console.log(e.message);
 }
 
-const circle = {
-  radius: 1,
-  get area() {
-    return Math.PI * this.radius * this.radius;
-  },
-};
-circle.radius = 2;
-console.log(circle.area);
+function countOccurrences(array, searchElement) {
+  // let count = 0;
+  // for (let element of array) if (element === searchElement) count++;
+  // return count;
+  if (!Array.isArray(array)) throw new Error("Enter an array!");
+  return array.reduce(
+    (accumulator, currentValue) =>
+      accumulator + (currentValue === searchElement ? 1 : 0),
+    0,
+  );
+}
