@@ -875,11 +875,36 @@ const course = [
 // }
 // console.log(person.fullName);
 
-const video = {
-  title: "a",
-  tags: ["a", "b", "c"],
-  showTags() {
-    this.tags.forEach((tag) => console.log(this.title, tag));
+// const video = {
+//   title: "a",
+//   tags: ["a", "b", "c"],
+//   showTags() {
+//     this.tags.forEach((tag) => console.log(this.title, tag));
+//   },
+// };
+// video.showTags();
+
+console.log(sum([1, 2, 3, 4, 5]));
+
+function sum(...numbers) {
+  if (numbers.length === 1 && Array.isArray(numbers[0]))
+    numbers = [...numbers[0]];
+
+  return numbers.reduce((a, b) => a + b);
+}
+
+const circle = {
+  radius: 1,
+
+  // get radius() {
+  //   return this.radius;
+  // },
+  // set radius(value) {
+  //   this.radius = value;
+  // },
+  get area() {
+    return Math.PI * this.radius * this.radius;
   },
 };
-video.showTags();
+// circle.radius = 2;
+console.log(circle.area);
