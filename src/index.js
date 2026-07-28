@@ -725,22 +725,22 @@
 // );
 // console.log(result);
 
-const course = [
-  // const result = course.reduce((accumulator, currentValue) => {
-  //  return accumulator + currentValue.id;
-  // }, 0);
-  // console.log(result);
-  // const numbers = arraFromRange(1, 4);
-  // console.log(numbers);
+// const course = [
+// const result = course.reduce((accumulator, currentValue) => {
+//  return accumulator + currentValue.id;
+// }, 0);
+// console.log(result);
+// const numbers = arraFromRange(1, 4);
+// console.log(numbers);
 
-  // function arraFromRange(min, max) {
-  //   let range = [];
-  //   for (let i = min; i <= max; i++) range.push(i);
-  //   return range;
-  // }
-  { id: 1, name: "js" },
-  { id: 0, name: "react js" },
-];
+// function arraFromRange(min, max) {
+//   let range = [];
+//   for (let i = min; i <= max; i++) range.push(i);
+//   return range;
+// }
+//   { id: 1, name: "js" },
+//   { id: 0, name: "react js" },
+// ];
 
 // console.log(includes(numbers, 1));
 
@@ -902,22 +902,45 @@ const course = [
 // circle.radius = 2;
 // console.log(circle.area);
 
-try {
-  const numbers = [1, 2, 3, 4, 5, 1, 1];
-  const result = countOccurrences(true, 1);
-  console.log(result);
-} catch (e) {
-  console.log(e.message);
-}
+// try {
+//   const numbers = [1, 2, 3, 4, 5, 1, 1];
+//   const result = countOccurrences(true, 1);
+//   console.log(result);
+// } catch (e) {
+//   console.log(e.message);
+// }
 
-function countOccurrences(array, searchElement) {
-  // let count = 0;
-  // for (let element of array) if (element === searchElement) count++;
-  // return count;
-  if (!Array.isArray(array)) throw new Error("Enter an array!");
-  return array.reduce(
-    (accumulator, currentValue) =>
-      accumulator + (currentValue === searchElement ? 1 : 0),
-    0,
-  );
+// function countOccurrences(array, searchElement) {
+//   // let count = 0;
+//   // for (let element of array) if (element === searchElement) count++;
+//   // return count;
+//   if (!Array.isArray(array)) throw new Error("Enter an array!");
+//   return array.reduce(
+//     (accumulator, currentValue) =>
+//       accumulator + (currentValue === searchElement ? 1 : 0),
+//     0,
+//   );
+// }
+
+function StopWatch() {
+  let startTime,
+    endTime,
+    running,
+    duration = 0;
+
+  this.start = function () {
+    running = true;
+    startTime = new Date();
+  };
+  this.stop = function () {
+    running = false;
+    endTime = new Date();
+    return startTime.getSeconds() - endTime.getSeconds();
+  };
+  this.reset = function () {
+    startTime = 0;
+    duration = 0;
+    running = false;
+  };
 }
+const SW = new StopWatch();
