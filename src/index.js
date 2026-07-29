@@ -955,23 +955,34 @@
 // }
 // const SW = new StopWatch();
 
+// class Circle {
+//   constructor(radius) {
+//     this.radius = radius;
+//     this.move = function (a) {
+//       console.log("move", a);
+//     };
+//   }
+//   draw() {
+//     console.log("draw");
+//   }
+//   static parse(str) {}
+// }
+// const c = new Circle(1, 2);
+// c.move(2);
+// console.log(c);
+
+// class Math2 {
+//   static abs(value) {}
+// }
+// Math2.abs();
+
+const _radius = Symbol();
+const _draw = Symbol();
 class Circle {
   constructor(radius) {
-    this.radius = radius;
-    this.move = function (a) {
-      console.log("move", a);
-    };
+    this[_radius] = radius;
   }
-  draw() {
-    console.log("draw");
-  }
-  static parse(str) {}
+  [_draw]() {}
 }
-const c = new Circle(1, 2);
-c.move(2);
-console.log(c);
-
-class Math2 {
-  static abs(value) {}
-}
-Math2.abs();
+const c = new Circle(1);
+console.log(c._draw);
