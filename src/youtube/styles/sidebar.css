@@ -6,4 +6,32 @@
   top: 50px;
   width: 72px;
   z-index: 9;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+
+  padding-top: 6px;
+}
+.sidebar-link {
+  height: 76px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+}
+.sidebar-link:hover {
+  background-color: rgb(236, 236, 236);
+  cursor: pointer;
+}
+
+.sidebar-link > img {
+  height: 25px;
+}
+.sidebar-link > p {
+  font-size: 10px;
+  text-wrap: nowrap;
 }

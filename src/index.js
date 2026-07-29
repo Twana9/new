@@ -976,6 +976,17 @@
 // }
 // Math2.abs();
 
+// const _radius = Symbol();
+// const _draw = Symbol();
+// class Circle {
+//   constructor(radius) {
+//     this[_radius] = radius;
+//   }
+//   [_draw]() {}
+// }
+// const c = new Circle(1);
+// console.log(c);
+
 const _radius = Symbol();
 const _draw = Symbol();
 class Circle {
@@ -985,4 +996,4 @@ class Circle {
   [_draw]() {}
 }
 const c = new Circle(1);
-console.log(c._draw);
+console.log(c);
