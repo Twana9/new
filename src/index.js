@@ -922,35 +922,56 @@
 //   );
 // }
 
-function StopWatch() {
-  let startTime,
-    endTime,
-    running,
-    duration = 0;
+// function StopWatch() {
+//   let startTime,
+//     endTime,
+//     running,
+//     duration = 0;
 
-  this.start = function () {
-    if (running) throw new Error("its already started!");
-    running = true;
-    startTime = new Date();
-  };
-  this.stop = function () {
-    if (!running) throw new Error("its not started yet!");
-    running = false;
-    endTime = new Date();
-    const seconds = (endTime.getTime() - startTime.getTime()) / 1000;
-    duration += seconds;
-    return duration;
-  };
-  this.reset = function () {
-    startTime = 0;
-    endTime = 0;
-    duration = 0;
-    running = false;
-  };
-  Object.defineProperty(this, "duration", {
-    get: function () {
-      return duration;
-    },
-  });
+//   this.start = function () {
+//     if (running) throw new Error("its already started!");
+//     running = true;
+//     startTime = new Date();
+//   };
+//   this.stop = function () {
+//     if (!running) throw new Error("its not started yet!");
+//     running = false;
+//     endTime = new Date();
+//     const seconds = (endTime.getTime() - startTime.getTime()) / 1000;
+//     duration += seconds;
+//     return duration;
+//   };
+//   this.reset = function () {
+//     startTime = 0;
+//     endTime = 0;
+//     duration = 0;
+//     running = false;
+//   };
+//   Object.defineProperty(this, "duration", {
+//     get: function () {
+//       return duration;
+//     },
+//   });
+// }
+// const SW = new StopWatch();
+
+class Circle {
+  constructor(radius) {
+    this.radius = radius;
+    this.move = function (a) {
+      console.log("move", a);
+    };
+  }
+  draw() {
+    console.log("draw");
+  }
+  static parse(str) {}
 }
-const SW = new StopWatch();
+const c = new Circle(1, 2);
+c.move(2);
+console.log(c);
+
+class Math2 {
+  static abs(value) {}
+}
+Math2.abs();
