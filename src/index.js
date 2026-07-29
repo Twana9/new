@@ -929,18 +929,28 @@ function StopWatch() {
     duration = 0;
 
   this.start = function () {
+    if (running) throw new Error("its already started!");
     running = true;
     startTime = new Date();
   };
   this.stop = function () {
+    if (!running) throw new Error("its not started yet!");
     running = false;
     endTime = new Date();
-    return startTime.getSeconds() - endTime.getSeconds();
+    const seconds = (endTime.getTime() - startTime.getTime()) / 1000;
+    duration += seconds;
+    return duration;
   };
   this.reset = function () {
     startTime = 0;
+    endTime = 0;
     duration = 0;
     running = false;
   };
+  Object.defineProperty(this, "duration", {
+    get: function () {
+      return duration;
+    },
+  });
 }
 const SW = new StopWatch();
