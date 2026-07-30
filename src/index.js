@@ -1017,16 +1017,21 @@
 // }
 // const c = new Circle("red", 1);
 
-class Shape {
-  move() {
-    console.log("move");
-  }
-}
-class Circle extends Shape {
-  move() {
-    super.move();
-    console.log("move circle");
-  }
-}
-const c = new Circle();
-const b = new Shape();
+// class Shape {
+//   move() {
+//     console.log("move");
+//   }
+// }
+// class Circle extends Shape {
+//   move() {
+//     super.move();
+//     console.log("move circle");
+//   }
+// }
+// const c = new Circle();
+// const b = new Shape();
+
+import { Circle } from "./circle.js";
+const c = new Circle(10);
+
+c.draw();
