@@ -987,13 +987,32 @@
 // const c = new Circle(1);
 // console.log(c);
 
-const _radius = Symbol();
-const _draw = Symbol();
-class Circle {
-  constructor(radius) {
-    this[_radius] = radius;
+// const _radius = Symbol();
+// const _draw = Symbol();
+// class Circle {
+//   constructor(radius) {
+//     this[_radius] = radius;
+//   }
+//   [_draw]() {}
+// }
+// const c = new Circle(1);
+// console.log(c);
+
+class Shape {
+  constructor(color) {
+    this.color = color;
   }
-  [_draw]() {}
+  move() {
+    console.log("move");
+  }
 }
-const c = new Circle(1);
-console.log(c);
+class Circle extends Shape {
+  constructor(color, radius) {
+    super(color);
+    this.radius = radius;
+  }
+  draw() {
+    console.log("draw");
+  }
+}
+const c = new Circle("red", 1);
